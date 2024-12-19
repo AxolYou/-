@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>День открытых дверей | СКФНИУ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>СКФНИУ</h1>
+        </div>
+        <nav>
+            <div class="burger-menu">☰</div>
+            <ul class="nav-links">
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#programs">Программы</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#registration">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="main">
+            <div class="hero-content">
+                <h1>День открытых дверей</h1>
+                <p>15 апреля 2025 года</p>
+                <button class="register-btn">Зарегистрироваться</button>
+            </div>
+        </section>
+
+        <section id="programs">
+            <h2>Наши факультеты</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>Информационные технологии</h3>
+                    <p>Программирование, кибербезопасность, искусственный интеллект</p>
+                </div>
+                <div class="program-card">
+                    <h3>Экономика</h3>
+                    <p>Финансы, менеджмент, маркетинг</p>
+                </div>
+                <div class="program-card">
+                    <h3>Юриспруденция</h3>
+                    <p>Гражданское право, уголовное право, международное право</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule">
+            <h2>Программа дня</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="time">10:00</div>
+                    <div class="event">Встреча гостей и регистрация</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">11:00</div>
+                    <div class="event">Презентация университета</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">12:30</div>
+                    <div class="event">Экскурсия по кампусу</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">14:00</div>
+                    <div class="event">Мастер-классы</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration">
+            <h2>Регистрация на день открытых дверей</h2>
+            <form id="registrationForm" class="register-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Телефон" required>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Регистрация на день открытых дверей</h2>
+            <form id="modalForm" class="register-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Телефон" required>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Контакты</h3>
+                <p>Адрес: ул. Университетская, 1</p>
+                <p>Телефон: 8 (800) 123-45-67</p>
+                <p>Email: openday@university.ru</p>
+            </div>
+            <div class="social-links">
+                <a href="#">VK</a>
+                <a href="#">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
